@@ -10,5 +10,5 @@ server.register(videosRouter);
 
 server.listen({
   host: host,
-  port,
+  port: process.env.PORT ?? port,
 });
